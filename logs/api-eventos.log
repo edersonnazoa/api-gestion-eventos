@@ -1,0 +1,201 @@
+2026-02-04 13:01:35.442 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-02-04 13:01:35.641 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 21.0.9 with PID 16972 (C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api\target\classes started by eders in C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api)
+2026-02-04 13:01:35.641 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v3.5.6, Spring v6.2.11
+2026-02-04 13:01:35.645 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-02-04 13:01:39.107 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 13:01:39.391 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 250 ms. Found 5 JPA repository interfaces.
+2026-02-04 13:01:41.545 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-04 13:01:41.595 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-04 13:01:41.600 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-04 13:01:41.600 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-02-04 13:01:41.870 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-04 13:01:41.875 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6053 ms
+2026-02-04 13:01:42.315 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-04 13:01:42.606 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2026-02-04 13:01:42.819 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-04 13:01:44.602 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 13:01:44.691 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 13:01:53.382 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63c4d16
+2026-02-04 13:01:53.387 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 13:01:54.639 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.7
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 13:01:59.443 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 13:02:05.857 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 13:02:07.215 DEBUG c.g.e.a.s.j.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-04 13:02:07.633 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-04 13:02:10.401 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-02-04 13:02:11.137 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 13:02:14.200 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-04 13:02:14.259 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-04 13:02:14.292 INFO  c.gestion.eventos.api.ApiApplication - Started ApiApplication in 40.323 seconds (process running for 41.556)
+2026-02-04 13:02:14.730 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-04 13:02:14.730 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-04 13:02:14.743 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2026-02-04 13:02:17.092 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1353 ms
+2026-02-04 13:06:05.920 INFO  c.g.e.api.controller.EventController - Recibida solicitud POST para crear evento: Nuevo Evento 10
+2026-02-04 13:06:05.925 DEBUG c.g.eventos.api.service.EventService - Procesando save de evento en el servicio para: Nuevo Evento 10
+2026-02-04 13:06:05.925 DEBUG c.g.eventos.api.service.EventService - Asignando categoría con ID: 2
+2026-02-04 13:06:06.184 DEBUG c.g.eventos.api.service.EventService - Asignando 1 oradores al evento.
+2026-02-04 13:06:07.553 INFO  c.g.eventos.api.service.EventService - Evento 'Nuevo Evento 10' guardado en DB con ID: 61.
+2026-02-04 13:06:07.922 DEBUG c.g.e.api.controller.EventController - Evento creado exitosamente con ID: 61
+2026-02-04 13:07:00.676 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-04 13:07:00.703 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-04 13:07:00.720 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 13:07:00.732 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 13:07:02.411 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 15:18:42.399 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 21.0.9 with PID 5564 (C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api\target\classes started by eders in C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api)
+2026-02-04 15:18:42.403 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-02-04 15:18:42.405 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-02-04 15:18:43.023 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-04 15:18:43.747 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 15:18:43.855 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2026-02-04 15:18:44.775 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-04 15:18:44.793 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-04 15:18:44.795 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-04 15:18:44.796 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-04 15:18:44.886 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2409 ms
+2026-02-04 15:18:45.100 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-04 15:18:45.202 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-04 15:18:45.876 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 15:18:45.925 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 15:18:49.008 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d695ec4
+2026-02-04 15:18:49.011 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 15:18:50.112 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://ep-autumn-sun-acgr2s1k-pooler.sa-east-1.aws.neon.tech/gestioneventosdb?sslmode=require&channelBinding=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.7
+	Default catalog/schema: gestioneventosdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 15:18:51.449 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 15:18:53.084 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 15:18:53.201 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-04 15:18:53.513 DEBUG c.g.e.a.s.j.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-04 15:18:54.455 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-02-04 15:18:54.605 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 15:18:55.431 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-04 15:18:55.449 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-04 15:18:55.456 INFO  c.gestion.eventos.api.ApiApplication - Started ApiApplication in 13.833 seconds (process running for 14.515)
+2026-02-04 15:19:31.132 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-04 15:19:31.132 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-04 15:19:31.135 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-02-04 15:20:48.524 INFO  c.g.e.api.controller.EventController - Recibida solicitud GET /events con nombre 'Conferencia' y paginación Page request [number: 0, size 53, sort: name: ASC].
+2026-02-04 15:20:48.526 DEBUG c.g.eventos.api.service.EventService - Buscando eventos en el servicio (name: 'Conferencia', pageable: Page request [number: 0, size 53, sort: name: ASC]).
+2026-02-04 15:20:49.072 DEBUG c.g.eventos.api.service.EventService - Filtrando eventos por nombre: 'Conferencia'. Encontrados: 60.
+2026-02-04 15:20:57.813 INFO  c.g.eventos.api.service.EventService - Encontrados 60 eventos paginados y mapeados a DTOs.
+2026-02-04 15:20:57.967 DEBUG c.g.e.api.controller.EventController - Devolviendo 60 eventos paginados.
+2026-02-04 15:20:57.986 WARN  o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-02-04 15:21:32.816 INFO  c.g.e.api.controller.EventController - Recibida solicitud GET /events con nombre 'Conferencia' y paginación Page request [number: 0, size 5, sort: name: ASC].
+2026-02-04 15:21:32.816 DEBUG c.g.eventos.api.service.EventService - Buscando eventos en el servicio (name: 'Conferencia', pageable: Page request [number: 0, size 5, sort: name: ASC]).
+2026-02-04 15:21:33.140 DEBUG c.g.eventos.api.service.EventService - Filtrando eventos por nombre: 'Conferencia'. Encontrados: 60.
+2026-02-04 15:21:34.391 INFO  c.g.eventos.api.service.EventService - Encontrados 60 eventos paginados y mapeados a DTOs.
+2026-02-04 15:21:34.545 DEBUG c.g.e.api.controller.EventController - Devolviendo 60 eventos paginados.
+2026-02-04 15:21:59.033 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-04 15:21:59.042 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-04 15:21:59.045 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 15:21:59.048 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 15:22:00.599 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 15:22:34.111 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 21.0.9 with PID 8440 (C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api\target\classes started by eders in C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api)
+2026-02-04 15:22:34.113 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-02-04 15:22:34.114 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-02-04 15:22:34.702 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-04 15:22:35.441 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 15:22:35.541 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 5 JPA repository interfaces.
+2026-02-04 15:22:36.393 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-04 15:22:36.410 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-04 15:22:36.414 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-04 15:22:36.415 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-04 15:22:36.514 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2340 ms
+2026-02-04 15:22:36.739 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-04 15:22:36.815 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-04 15:22:37.499 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 15:22:37.530 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 15:22:39.377 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d695ec4
+2026-02-04 15:22:39.379 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 15:22:40.393 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://ep-autumn-sun-acgr2s1k-pooler.sa-east-1.aws.neon.tech/gestioneventosdb?sslmode=require&channelBinding=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.7
+	Default catalog/schema: gestioneventosdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 15:22:41.506 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 15:22:43.046 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 15:22:43.179 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-04 15:22:43.492 DEBUG c.g.e.a.s.j.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-04 15:22:44.738 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-02-04 15:22:44.998 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 15:22:45.936 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-04 15:22:45.966 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-04 15:22:45.983 INFO  c.gestion.eventos.api.ApiApplication - Started ApiApplication in 12.624 seconds (process running for 13.205)
+2026-02-04 15:22:50.528 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-04 15:22:50.536 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-04 15:22:50.541 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 15:22:50.544 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 15:22:52.085 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-04 15:24:50.637 INFO  c.gestion.eventos.api.ApiApplication - Starting ApiApplication using Java 21.0.9 with PID 11456 (C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api\target\classes started by eders in C:\Users\eders\Documents\Cursos devtalles\Curso Java\Curso Java Spring Boot\seccion-17\api)
+2026-02-04 15:24:50.640 DEBUG c.gestion.eventos.api.ApiApplication - Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-02-04 15:24:50.641 INFO  c.gestion.eventos.api.ApiApplication - The following 1 profile is active: "dev"
+2026-02-04 15:24:51.457 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-04 15:24:52.214 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-04 15:24:52.327 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 5 JPA repository interfaces.
+2026-02-04 15:24:53.260 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-04 15:24:53.282 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-04 15:24:53.287 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-04 15:24:53.289 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-04 15:24:53.405 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2702 ms
+2026-02-04 15:24:53.630 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-04 15:24:53.712 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-02-04 15:24:54.425 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-04 15:24:54.456 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-04 15:24:56.431 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1eb7ec59
+2026-02-04 15:24:56.434 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-04 15:24:57.505 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://ep-autumn-sun-acgr2s1k-pooler.sa-east-1.aws.neon.tech/gestioneventosdb?sslmode=require&channelBinding=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.7
+	Default catalog/schema: gestioneventosdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-04 15:24:58.879 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-04 15:25:00.477 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 15:25:00.604 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-04 15:25:00.917 DEBUG c.g.e.a.s.j.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-04 15:25:01.954 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-02-04 15:25:02.135 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-04 15:25:03.063 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-04 15:25:03.083 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-04 15:25:03.092 INFO  c.gestion.eventos.api.ApiApplication - Started ApiApplication in 13.254 seconds (process running for 13.892)
+2026-02-04 15:25:38.143 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-04 15:25:38.144 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-04 15:25:38.146 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-04 15:25:39.145 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 643 ms
+2026-02-04 15:27:20.125 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-04 15:27:20.133 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-04 15:27:20.138 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-04 15:27:20.140 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-04 15:27:21.689 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
